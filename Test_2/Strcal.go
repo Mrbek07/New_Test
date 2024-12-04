@@ -52,7 +52,7 @@ func main() {
 		result = firstStr + secondArg
 	case "-":
 
-		result = strings.Replace(firstStr, secondArg, "", 1)
+		result = strings.Replace(firstStr, secondArg, " ", 1)
 	case "*":
 		number, err := strconv.Atoi(secondArg)
 		if err != nil || number < 1 || number > 10 {
